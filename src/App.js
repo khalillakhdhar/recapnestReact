@@ -6,6 +6,7 @@ import Parite from './components/Parite';
 import Factoriel from './components/Factoriel';
 import Counter from './components/Counter';
 import Basic from './components/Basic';
+import Subscribe from './components/Subscribe';
 function App() {
   return (
     <Router>
@@ -26,7 +27,11 @@ function App() {
           </li>
           <li>
             <Link to="/form">Form</Link>
+           
           </li>
+          <li>
+            <Link to="/subscribe">Subscribe</Link>
+            </li>
         </ul>
       </nav>
       <Routes>
@@ -35,6 +40,7 @@ function App() {
         <Route path="/factoriel" element={<Factoriel />} />
         <Route path='/counter' element={<Counter/>} ></Route>
         <Route path='/form' element={<Basic/>} ></Route>
+        <Route path='/subscribe' element={<Subscribe/>} ></Route>
       </Routes>
       </div>
     </Router>
