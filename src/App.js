@@ -7,6 +7,7 @@ import Factoriel from './components/Factoriel';
 import Counter from './components/Counter';
 import Basic from './components/Basic';
 import Subscribe from './components/Subscribe';
+import Api from './components/Api';
 function App() {
   return (
     <Router>
@@ -32,6 +33,9 @@ function App() {
           <li>
             <Link to="/subscribe">Subscribe</Link>
             </li>
+            <li>
+            <Link to="/api">Api</Link>
+            </li>
         </ul>
       </nav>
       <Routes>
@@ -41,6 +45,7 @@ function App() {
         <Route path='/counter' element={<Counter/>} ></Route>
         <Route path='/form' element={<Basic/>} ></Route>
         <Route path='/subscribe' element={<Subscribe/>} ></Route>
+        <Route path='/api' element={<Api/>} ></Route>
       </Routes>
       </div>
     </Router>
