@@ -3,6 +3,7 @@ import React, {useEffect,useState} from 'react'
 
 export default function Api() {
     // liste des todos
+    
     const [todos, setTodos] = useState([]);
     // useEffect pour lire un api axios https://jsonplaceholder.typicode.com/todos
      useEffect(() => {    
@@ -15,8 +16,10 @@ export default function Api() {
             console.log(err);
         })
      }, [])
+     
   return (
     <div>
+         
       
         <h1>Liste des todos</h1>
         <ul>
