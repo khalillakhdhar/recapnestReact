@@ -8,6 +8,7 @@ import Counter from './components/Counter';
 import Basic from './components/Basic';
 import Subscribe from './components/Subscribe';
 import Api from './components/Api';
+import TodoApp from './components/Todo';
 function App() {
   return (
     <Router>
@@ -36,6 +37,9 @@ function App() {
             <li>
             <Link to="/api">Api</Link>
             </li>
+            <li>
+            <Link to="/todo">Todo</Link>
+            </li>
         </ul>
       </nav>
       <Routes>
@@ -46,6 +50,7 @@ function App() {
         <Route path='/form' element={<Basic/>} ></Route>
         <Route path='/subscribe' element={<Subscribe/>} ></Route>
         <Route path='/api' element={<Api/>} ></Route>
+        <Route path='/todo' element={<TodoApp/>} ></Route>
       </Routes>
       </div>
     </Router>
