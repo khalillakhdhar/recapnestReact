@@ -9,6 +9,7 @@ import Basic from './components/Basic';
 import Subscribe from './components/Subscribe';
 import Api from './components/Api';
 import TodoApp from './components/Todo';
+import { UserForm, UserList } from './components/Users';
 function App() {
   return (
     <Router>
@@ -40,6 +41,12 @@ function App() {
             <li>
             <Link to="/todo">Todo</Link>
             </li>
+            <li>
+            <Link to="/user">User</Link>
+            </li>
+            <li>
+            <Link to="/adduser">AddUser</Link>
+            </li>
         </ul>
       </nav>
       <Routes>
@@ -51,6 +58,8 @@ function App() {
         <Route path='/subscribe' element={<Subscribe/>} ></Route>
         <Route path='/api' element={<Api/>} ></Route>
         <Route path='/todo' element={<TodoApp/>} ></Route>
+        <Route path='/user' element={<UserList/>} ></Route>
+        <Route path='/adduser' element={<UserForm/>} ></Route>
       </Routes>
       </div>
     </Router>
